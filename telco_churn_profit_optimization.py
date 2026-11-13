@@ -399,12 +399,12 @@ print(f"Incremental profit over Nadia's 25% cap: ${max_profit - nadia_profit:,.2
 np.random.seed(123)
 
 # Target parameters
-target_k = n_total # number of targeted customers under optimal model
+target_k = max_idx # number of targeted customers under optimal model (top-k with max profit)
 tp_benefit = tp_net_benefit
 fp_cost = fp_net_cost
 n_test = len(y_test)
 
-# Simulate a random 'dumb' campaign targeting 528 random customers from the test set
+# Simulate a random 'dumb' campaign targeting the same number (target_k) of random customers from the test set
 # We run this simulation multiple times to get a stable estimate of random performance
 simulations = 1000
 random_profits = []
