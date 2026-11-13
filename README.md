@@ -41,6 +41,8 @@ Cross-validated AUC of the best model: 0.8398.
 
 Raising the target from 25% to about 47% adds roughly $25,000 on the test set. Using each customer's own monthly charges adds another $58,000.
 
+**Model vs. random targeting.** Marketing to the same 657 customers chosen at random (average of 1,000 simulations) earns about $17,853 on the test set, versus $143,085 for the model. Scaled to 100,000 expiring contracts, that is about $1.27M vs. $10.17M, an incremental value of roughly $8.9M.
+
 ## Project files
 
 | File | Purpose |
