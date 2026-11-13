@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-11-13T15:36:00",
+  "best_model": {
+    "name": "Lasso Logistic Regression",
+    "test_auc": 0.8592,
+    "cv_auc": 0.8398,
+    "best_params": {
+      "C": 0.1
+    },
+    "all_params": {
+      "C": 0.1,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 100,
+      "multi_class": "deprecated",
+      "n_jobs": null,
+      "penalty": "l1",
+      "random_state": 123,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "scaled_features": true
+  },
+  "all_models_test_auc": {
+    "Decision Tree": 0.8427,
+    "Lasso Logistic Regression": 0.8592,
+    "SVM": 0.8554,
+    "MLP Classifier": 0.7603
+  },
+  "data": {
+    "file": "telco_churn.csv",
+    "md5": "1754b10515347e420d446f6d6485f1e0",
+    "n_rows_after_dummies": 7032,
+    "n_features": 29,
+    "split": {
+      "test_size": 0.2,
+      "random_state": 123
+    }
+  },
+  "environment": {
+    "python": "3.10.10",
+    "numpy": "1.26.4",
+    "pandas": "2.2.2",
+    "scikit-learn": "1.7.2"
+  }
+}
